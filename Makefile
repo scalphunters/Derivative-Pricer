@@ -1,4 +1,4 @@
-
+ 
 .SUFFIXES : .cpp .o
 CC = g++
 INCS= 
