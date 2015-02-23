@@ -11,6 +11,8 @@
 #include "marketdata.hpp"
 #include "instrument.hpp"
 #include "curve.hpp"
+#include "my_global.h"
+#include "mysql.h"
 
 #define TIXML_USE_STL
 
@@ -53,16 +55,26 @@ namespace psk
       //all
       virtual bool loadData(std::string dataname)
       {
-	loadHolidays();
-	loadCalendar();
-	loadDateRules();
-	loadMarketData();
-	loadInstruments();
-	loadCurves();
-	loadInstruments_Second();
-	loadCurves_Second();
+		loadHolidays();
+		loadCalendar();
+		loadDateRules();
+		loadMarketData();
+		loadInstruments();
+		loadCurves();
+		loadInstruments_Second();
+		loadCurves_Second();
       }; //datename : holidays,calendar,marketdata,daterules,curves,instruments
     
+    };
+
+    class IOHandlerMySQL : public IOHandler
+    {
+    private:
+
+    public:
+    	IOHandlerMySQL(){};
+    	IOHandlerMySQL(std::string host,std::string userid,std::string password,std::string database){};
+    	~IOHandlerMySQL(){};
     };
 
     class IOHandlerXML : public IOHandler
@@ -96,15 +108,15 @@ namespace psk
       //all
       virtual bool loadData(std::string dataname)
       {
-	loadFileMap(dataname);
-	loadHolidays();
-	loadCalendar();
-	loadDateRules();
-	loadMarketData();
-	loadInstruments();
-	loadCurves();
-	loadInstruments_Second();
-	loadCurves_Second();	
+		loadFileMap(dataname);
+		loadHolidays();
+		loadCalendar();
+		loadDateRules();
+		loadMarketData();
+		loadInstruments();
+		loadCurves();
+		loadInstruments_Second();
+		loadCurves_Second();
       };
 
       void printfmap();
