@@ -44,47 +44,47 @@ namespace psk
       std::string dailystr;
       int dailytype=0;
       gregorian::date spdate;
-  
+
       qi::rule<std::string::iterator, std::string()> date_ = qi::skip(' ')[qi::int_[phoenix::ref(year)=qi::_1]
 									   >> '-'
 									   >> qi::int_[phoenix::ref(month)=qi::_1]
 									   >> '-'
 									   >> qi::int_[phoenix::ref(day)=qi::_1]];
 
-      qi::rule<std::string::iterator,std::string()> tnrstr_ = 
+      qi::rule<std::string::iterator,std::string()> tnrstr_ =
 	qi::no_case[std::string("m")][phoenix::ref(tenortype)=phoenix::val(3)]
 	| qi::no_case[std::string("d")][phoenix::ref(tenortype)=phoenix::val(1)]
 	| qi::no_case[std::string("y")][phoenix::ref(tenortype)=phoenix::val(4)]
 	| qi::no_case[std::string("w")][phoenix::ref(tenortype)=phoenix::val(2)]
 	| qi::no_case[std::string("od")][phoenix::ref(tenortype)=phoenix::val(5)]
 	;
-      qi::rule<std::string::iterator,std::string()> tenor_ = qi::int_[phoenix::ref(iter)=qi::_1] 
+      qi::rule<std::string::iterator,std::string()> tenor_ = qi::int_[phoenix::ref(iter)=qi::_1]
 	>>tnrstr_[phoenix::ref(tnrstr)=qi::_1];
-					   			
 
-      qi::rule<std::string::iterator,std::string()> dailystr_ = qi::no_case[std::string("tod")][phoenix::ref(dailytype)=phoenix::val(0)] 
-	| qi::no_case[std::string("tom")][phoenix::ref(dailytype)=phoenix::val(1)] 
+
+      qi::rule<std::string::iterator,std::string()> dailystr_ = qi::no_case[std::string("tod")][phoenix::ref(dailytype)=phoenix::val(0)]
+	| qi::no_case[std::string("tom")][phoenix::ref(dailytype)=phoenix::val(1)]
 	| qi::no_case[std::string("spot")][phoenix::ref(dailytype)=phoenix::val(2)];
-                                                          
+
       qi::rule<std::string::iterator,std::string()> daily_ = dailystr_[phoenix::ref(dailystr)=qi::_1];
-  
-      r=qi::phrase_parse(first,last,     date_[phoenix::ref(type)=phoenix::val(1)] 
-			 | tenor_[phoenix::ref(type)=phoenix::val(2)] 
+
+      r=qi::phrase_parse(first,last,     date_[phoenix::ref(type)=phoenix::val(1)]
+			 | tenor_[phoenix::ref(type)=phoenix::val(2)]
 			 | daily_[phoenix::ref(type)=phoenix::val(3)] , qi::space);
-  
-  
+
+
       if(first!=last) r=false;
-      if(r) 
+      if(r)
 	{
 	  switch(type)
 	    {
-	    case 1:   
-	      if(_isDateValid(year,month,day)) 
+	    case 1:
+	      if(_isDateValid(year,month,day))
 		d=gregorian::date(year,month,day);
 	      else
 		d=gregorian::date(1900,1,1); //default error date
 	      break;
-	    case 2:   
+	    case 2:
 	      spdate=_dailyconversion(today,starttype,rc,sd);
 	      d=_dateadd(spdate,iter,tenortype);
 	      d=_dateAdjustment(d,adjustment,rc,sd);
@@ -93,7 +93,7 @@ namespace psk
 	    default: break;
 	    }
 	}
-      return r;	 
+      return r;
     } //end of parse_tenor
 
     
