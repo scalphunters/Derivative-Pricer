@@ -1,0 +1,28 @@
+<instruments>
+  <inst name="KRW Depo" type="DEPO" description="KRW Depo">
+    <rc>KRW Depo</rc>
+  </inst>
+  <inst name="KRW IRS" type="IRS" description="KRW IRS">
+    <rc>KRW IRS</rc>
+  </inst>
+  <inst name="USD Depo" type="DEPO" description="USD Depo">
+    <rc>USD Depo</rc>
+  </inst>
+  <inst name="USD IRS" type="IRS" description="USD IRS">
+    <rc>USD IRS</rc>
+  </inst>
+
+  <inst name="USDKRW SWAPPOINT" type="SWAPPOINT" description="USDKRW swap point">
+    <rc>USDKRW FX</rc>
+    <ref_spot>USDKRW</ref_spot>
+    <ref_curve>USD STD</ref_curve>
+    <baseccy>USD</baseccy>
+  </inst>
+  <inst name="USDKRW CCS" type="CCS" description="USDKRW Cross Currency Swaps">
+    <rc>USDKRW FX</rc>
+    <ref_spot>USDKRW</ref_spot>
+    <ref_curve>USD STD</ref_curve>
+    <baseccy>USD</baseccy>
+  </inst>
+    
+</instruments>

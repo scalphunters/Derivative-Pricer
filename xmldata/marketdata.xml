@@ -1,0 +1,267 @@
+<marketdata>
+  <rate name="USDKRW" type="rate" description="USDKRW Spot">
+    <value type="double">1160.0</value>
+    <start>spot</start>
+    <tenor>spot</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+  <rate name="EURUSD" type="rate" description="EURUSD Spot">
+    <value type="double">1.3758</value>
+    <start>spot</start>
+    <tenor>spot</tenor>
+    <rc>EURUSD FX</rc>
+  </rate>
+
+  <rate name="USD ON" type="rate" description="USD Depo O/N">
+    <value type="double">0.0015</value>
+    <start>tod</start>
+    <tenor>tom</tenor>
+    <rc>USD Depo</rc>
+  </rate>
+  <rate name="USD 1M" type="rate" description="USD Depo 1M">
+    <value type="double">0.0027</value>
+    <start>spot</start>
+    <tenor>1M</tenor>
+    <rc>USD Depo</rc>
+  </rate>
+  <rate name="USD 2M" type="rate" description="USD Depo 2M">
+    <value type="double">0.0039</value>
+    <start>spot</start>
+    <tenor>2M</tenor>
+    <rc>USD Depo</rc>
+  </rate>
+  <rate name="USD 3M" type="rate" description="USD Depo 3M">
+    <value type="double">0.0054</value>
+    <start>spot</start>
+    <tenor>3M</tenor>
+    <rc>USD Depo</rc>
+  </rate>
+  <rate name="USD 6M" type="rate" description="USD Depo 6M">
+    <value type="double">0.0056</value>
+    <start>spot</start>
+    <tenor>6M</tenor>
+    <rc>USD Depo</rc>
+  </rate>
+  <rate name="USD 1Y" type="rate" description="USD IRS 1Y">
+    <value type="double">0.0063</value>
+    <start>spot</start>
+    <tenor>1Y</tenor>
+    <rc>USD IRS</rc>
+  </rate>
+  <rate name="USD 2Y" type="rate" description="USD IRS 2Y">
+    <value type="double">0.0069</value>
+    <start>spot</start>
+    <tenor>2Y</tenor>
+    <rc>USD IRS</rc>
+  </rate>
+  <rate name="USD 3Y" type="rate" description="USD IRS 3Y">
+    <value type="double">0.0084</value>
+    <start>spot</start>
+    <tenor>3Y</tenor>
+    <rc>USD IRS</rc>
+  </rate>
+
+ 
+  <rate name="KRW ON" type="rate" description="KRW Depo O/N">
+    <value type="double">0.0325</value>
+    <start>tod</start>
+    <tenor>tom</tenor>
+    <rc>KRW Depo</rc>
+  </rate>
+  <rate name="KRW 1M" type="rate" description="KRW Depo 1M">
+    <value type="double">0.035</value>
+    <start>spot</start>
+    <tenor>1M</tenor>
+    <rc>KRW Depo</rc>
+  </rate>
+  <rate name="KRW 2M" type="rate" description="KRW Depo 2M">
+    <value type="double">0.0352</value>
+    <start>spot</start>
+    <tenor>2M</tenor>
+    <rc>KRW Depo</rc>
+  </rate>
+  <rate name="KRW 3M" type="rate" description="KRW Depo 3M">
+    <value type="double">0.0357</value>
+    <start>spot</start>
+    <tenor>3M</tenor>
+    <rc>KRW Depo</rc>
+  </rate>
+  <rate name="KRW 6M" type="rate" description="KRW IRS 6M">
+    <value type="double">0.0360</value>
+    <start>spot</start>
+    <tenor>6M</tenor>
+    <rc>KRW IRS</rc>
+  </rate>
+ <rate name="KRW 1Y" type="rate" description="KRW IRS 1Y">
+    <value type="double">0.0370</value>
+    <start>spot</start>
+    <tenor>1Y</tenor>
+    <rc>KRW IRS</rc>
+  </rate>
+ <rate name="KRW 2Y" type="rate" description="KRW IRS 2Y">
+    <value type="double">0.0372</value>
+    <start>spot</start>
+    <tenor>2Y</tenor>
+    <rc>KRW IRS</rc>
+  </rate>
+<rate name="KRW 3Y" type="rate" description="KRW IRS 3Y">
+    <value type="double">0.0375</value>
+    <start>spot</start>
+    <tenor>3Y</tenor>
+    <rc>KRW IRS</rc>
+  </rate>
+
+  <rate name="USDKRW ON" type="rate" description="KRW Swappoint ON">
+    <value type="double">0.08</value>
+    <start>tod</start>
+    <tenor>tom</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+  <rate name="USDKRW TN" type="rate" description="KRW Swappoint TN">
+    <value type="double">0.08</value>
+    <start>tom</start>
+    <tenor>spot</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+  <rate name="USDKRW 1W" type="rate" description="KRW Swappoint 1W">
+    <value type="double">0.61</value>
+    <start>spot</start>
+    <tenor>1W</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+  <rate name="USDKRW 1M" type="rate" description="KRW Swappoint 1M">
+    <value type="double">2.6</value>
+    <start>spot</start>
+    <tenor>1M</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+  <rate name="USDKRW 2M" type="rate" description="KRW Swappoint 2M">
+    <value type="double">4.75</value>
+    <start>spot</start>
+    <tenor>2M</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+  <rate name="USDKRW 3M" type="rate" description="KRW Swappoint 3M">
+    <value type="double">6.8</value>
+    <start>spot</start>
+    <tenor>3M</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+  <rate name="USDKRW 6M" type="rate" description="KRW Swappoint 6M">
+    <value type="double">10.2</value>
+    <start>spot</start>
+    <tenor>6M</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+  <rate name="USDKRW 12M" type="rate" description="KRW Swappoint 12M">
+    <value type="double">13.0</value>
+    <start>spot</start>
+    <tenor>12M</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+  <rate name="USDKRW 2Y" type="rate" description="KRW CCS 2Y">
+    <value type="double">0.0172</value>
+    <start>spot</start>
+    <tenor>2Y</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+  <rate name="USDKRW 3Y" type="rate" description="KRW CCS 3Y">
+    <value type="double">0.0173</value>
+    <start>spot</start>
+    <tenor>3Y</tenor>
+    <rc>USDKRW FX</rc>
+  </rate>
+
+ <rateconvention name="KRW IRS" type="rateconvention" description="KRW IRS convention">
+    <market>IR</market>
+    <product>IRS</product>
+    <tomrule>1OD</tomrule>
+    <spotrule>1OD</spotrule>
+    <basis>Act365</basis>
+    <fixingrule>-1OD</fixingrule>
+    <paymentrule>MODFOL</paymentrule>
+    <settlement>delivery</settlement>
+    <paymentcalendar>SEO</paymentcalendar>
+    <fixingcalendar>SEO</fixingcalendar> 
+    <fixedtenor>3M</fixedtenor>
+    <floatingtenor>3M</floatingtenor> 
+    <basecurrency>KRW</basecurrency>
+    <quotecurrency>KRW</quotecurrency>
+  </rateconvention>
+
+  <rateconvention name="KRW Depo" type="rateconvention" description="KRW Depo convention">
+    <market>IR</market>
+    <product>Depo</product>
+    <tomrule>1OD</tomrule>
+    <spotrule>1OD</spotrule>
+    <basis>Act365</basis>
+    <fixingrule>0D</fixingrule>
+    <paymentrule>MODFOL</paymentrule>
+    <settlement>delivery</settlement>
+    <paymentcalendar>SEO</paymentcalendar>
+    <fixingcalendar>SEO</fixingcalendar>
+    <basecurrency>KRW</basecurrency>
+    <quotecurrency>KRW</quotecurrency>
+  </rateconvention>
+
+  <rateconvention name="USD Depo" type="rateconvention" description="USD Depo convention">
+    <market>IR</market>
+    <product>Depo</product>
+    <tomrule>1OD</tomrule>
+    <spotrule>2OD</spotrule>
+    <basis>Act365</basis>
+    <fixingrule>0D</fixingrule>
+    <paymentrule>MODFOL</paymentrule>
+    <settlement>delivery</settlement>
+    <paymentcalendar>NY</paymentcalendar>
+    <fixingcalendar>NY</fixingcalendar>
+    <basecurrency>USD</basecurrency>
+    <quotecurrency>USD</quotecurrency>
+  </rateconvention>
+<rateconvention name="USD IRS" type="rateconvention" description="USD IRS convention">
+    <market>IR</market>
+    <product>IRS</product>
+    <tomrule>1OD</tomrule>
+    <spotrule>1OD</spotrule>
+    <basis>30360</basis>
+    <fixingrule>-1OD</fixingrule>
+    <paymentrule>MODFOL</paymentrule>
+    <settlement>delivery</settlement>
+    <paymentcalendar>NY</paymentcalendar>
+    <fixingcalendar>NY</fixingcalendar> 
+    <fixedtenor>6M</fixedtenor>
+    <floatingtenor>6M</floatingtenor> 
+    <basecurrency>USD</basecurrency>
+    <quotecurrency>USD</quotecurrency>
+  </rateconvention>
+
+  <rateconvention name="USDKRW FX" type="rateconvention" description="USDKRW FX conventions">
+    <market>FX</market>
+    <product>FX Outright</product>
+    <tomrule>1OD</tomrule>
+    <spotrule>FX SPOT</spotrule>
+    <basis>Act365</basis>
+    <fixingrule>FX FIXING</fixingrule>
+    <paymentrule>MODFOL</paymentrule>
+    <settlement>delivery</settlement>
+    <paymentcalendar>SEONY</paymentcalendar>
+    <fixingcalendar>SEONY</fixingcalendar>
+    <fixedtenor>6M</fixedtenor>
+    <floatingtenor>6M</floatingtenor> 
+    <basecurrency>USD</basecurrency>
+    <quotecurrency>KRW</quotecurrency>
+  </rateconvention>
+  <rateconvention name="EURUSD FX" type="rateconvention" description="EURUSD FX conventions">
+    <market>FX</market>
+    <product>FX Outright</product>
+    <tomrule>1OD</tomrule>
+    <spotrule>FX SPOT</spotrule>
+    <fixingrule>FX FIXING</fixingrule>
+    <paymentrule>MODFOL</paymentrule> 
+    <settlement>delivery</settlement>
+    <paymentcalendar>NY</paymentcalendar>
+    <fixingcalendar>NY</fixingcalendar>
+    <basecurrency>EUR</basecurrency>
+    <quotecurrency>USD</quotecurrency>
+  </rateconvention>
+</marketdata>

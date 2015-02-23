@@ -1,0 +1,20 @@
+<filemap>
+  <filename name="holidays">
+    ./xmldata/holidays.xml
+  </filename>
+  <filename name="calendar">
+    ./xmldata/calendar.xml
+  </filename>
+  <filename name="marketdata">
+    ./xmldata/marketdata.xml
+  </filename>
+  <filename name="daterules">
+    ./xmldata/daterules.xml
+  </filename>
+  <filename name="curves">
+    ./xmldata/curves.xml
+  </filename>
+  <filename name="instruments">
+    ./xmldata/instruments.xml
+  </filename>
+</filemap>

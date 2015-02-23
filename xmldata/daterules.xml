@@ -1,0 +1,96 @@
+<daterules>
+  <dr name="0D" type="shifter">     
+    <periodtype>d</periodtype>
+    <iteration>0</iteration>
+    <applyHoliday>Y</applyHoliday>
+    <holidayConvention>Indifferent</holidayConvention>
+  </dr>
+  <dr name="-2OD" type="shifter">     
+    <periodtype>od</periodtype>
+    <iteration>-2</iteration>
+    <applyHoliday>Y</applyHoliday>
+    <holidayConvention>Preceding</holidayConvention>
+  </dr>
+  <dr name="-1OD" type="shifter">     
+    <periodtype>od</periodtype>
+    <iteration>-1</iteration>
+    <applyHoliday>Y</applyHoliday>
+    <holidayConvention>Preceding</holidayConvention>
+  </dr>
+
+  <dr name="3M" type="shifter">     
+    <periodtype>m</periodtype>
+    <iteration>3</iteration>
+    <applyHoliday>N</applyHoliday>
+    <holidayConvention>Indifferent</holidayConvention>
+  </dr>
+  <dr name="6M" type="shifter">     
+    <periodtype>m</periodtype>
+    <iteration>6</iteration>
+    <applyHoliday>N</applyHoliday>
+    <holidayConvention>Indifferent</holidayConvention>
+  </dr>
+  <dr name="3M MODFOL" type="shifter">     
+    <periodtype>m</periodtype>
+    <iteration>3</iteration>
+    <applyHoliday>Y</applyHoliday>
+    <holidayConvention>ModifiedFollowing</holidayConvention>
+  </dr>
+  <dr name="1D" type="shifter" description="1 calendar day">
+    <periodtype>od</periodtype>
+    <iteration>1</iteration>
+    <applyHoliday>Y</applyHoliday>
+    <holidayConvention>Indifferent</holidayConvention>
+  </dr>
+  <dr name="1OD" type="shifter">
+    <periodtype>od</periodtype>
+    <iteration>1</iteration>
+    <applyHoliday>Y</applyHoliday>
+    <holidayConvention>Following</holidayConvention>
+  </dr>
+  <dr name="2OD" type="shifter">
+    <periodtype>od</periodtype>
+    <iteration>2</iteration>
+    <applyHoliday>Y</applyHoliday>
+    <holidayConvention>Following</holidayConvention>
+  </dr>
+  <dr name="-2OD NO HOLS" type="shifter">
+    <periodtype>od</periodtype>
+    <iteration>-2</iteration>
+    <applyHoliday>N</applyHoliday>
+    <holidayConvention>Preceding</holidayConvention>
+  </dr>
+  <dr name="2OD NO HOLS" type="shifter">
+    <periodtype>od</periodtype>
+    <iteration>2</iteration>
+    <applyHoliday>N</applyHoliday>
+    <holidayConvention>Following</holidayConvention>
+  </dr>
+  <dr name="FOLLOWING" type="shifter">
+    <periodtype>od</periodtype>
+    <iteration>0</iteration>
+    <applyHoliday>Y</applyHoliday>
+    <holidayConvention>Following</holidayConvention>
+  </dr>
+  <dr name="MODFOL" type="shifter">
+    <periodtype>od</periodtype>
+    <iteration>0</iteration>
+    <applyHoliday>Y</applyHoliday>
+    <holidayConvention>ModifiedFollowing</holidayConvention>
+  </dr>
+  <dr name="PRECEDING" type="shifter">
+    <periodtype>od</periodtype>
+    <iteration>0</iteration>
+    <applyHoliday>Y</applyHoliday>
+    <holidayConvention>Preceding</holidayConvention>
+  </dr>
+
+  <dr name="FX SPOT" type="combined" description="FX 2 open days">
+    <rule no="001">2OD NO HOLS</rule>
+    <rule no="002">FOLLOWING</rule>
+  </dr>
+  <dr name="FX FIXING" type="combined" description="FX -2 open days">
+    <rule no="001">-2OD NO HOLS</rule>
+    <rule no="002">PRECEDING</rule>
+  </dr>
+</daterules>

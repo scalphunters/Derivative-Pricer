@@ -1,0 +1,12 @@
+<calendardata>
+  <SEO name="SEO" description="Seoul" SatHol="Y" SunHol="Y">
+    <calendar>SEO</calendar>
+  </SEO>
+  <NY name="NY" description="New York" SatHol="Y" SunHol="Y">
+    <calendar>NY</calendar>
+  </NY>
+  <SEONY name="SEONY" description="Seoul + New York" SatHol="Y" SunHol="Y">
+    <calendar>SEO</calendar>
+    <calendar>NY</calendar>
+  </SEONY>
+</calendardata>

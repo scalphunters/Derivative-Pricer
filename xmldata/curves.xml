@@ -1,0 +1,116 @@
+<curves>
+  <curve name="KRW STD" type="SingleRatesCurve" description="KRW standard rates Curve">
+    <curvelet no="1">
+      <rate>KRW ON</rate>
+      <instrument>KRW Depo</instrument>
+    </curvelet>
+    <curvelet no="2">
+      <rate>KRW 1M</rate>
+      <instrument>KRW Depo</instrument>
+    </curvelet>
+    <curvelet no="3">
+      <rate>KRW 2M</rate>
+      <instrument>KRW Depo</instrument>
+    </curvelet>
+    <curvelet no="4">
+      <rate>KRW 3M</rate>
+      <instrument>KRW Depo</instrument>
+    </curvelet>
+    <curvelet no="5">
+      <rate>KRW 6M</rate>
+      <instrument>KRW IRS</instrument>
+    </curvelet>
+    <curvelet no="6">
+      <rate>KRW 1Y</rate>
+      <instrument>KRW IRS</instrument>
+    </curvelet>
+    <curvelet no="7">
+      <rate>KRW 2Y</rate>
+      <instrument>KRW IRS</instrument>
+    </curvelet>
+    <curvelet no="8">
+      <rate>KRW 3Y</rate>
+      <instrument>KRW IRS</instrument>
+    </curvelet>
+  </curve>
+
+  <curve name="USD STD" type="SingleRatesCurve" description="USD Libor Curve">
+    <curvelet no="1">
+      <rate>USD ON</rate>
+      <instrument>USD Depo</instrument>
+    </curvelet>
+    <curvelet no="2">
+      <rate>USD 1M</rate>
+      <instrument>USD Depo</instrument>
+    </curvelet>
+    <curvelet no="3">
+      <rate>USD 2M</rate>
+      <instrument>USD Depo</instrument>
+    </curvelet>
+    <curvelet no="4">
+      <rate>USD 3M</rate>
+      <instrument>USD Depo</instrument>
+    </curvelet>
+    <curvelet no="5">
+      <rate>USD 6M</rate>
+      <instrument>USD Depo</instrument>
+    </curvelet>
+    <curvelet no="6">
+      <rate>USD 1Y</rate>
+      <instrument>USD IRS</instrument>
+    </curvelet>
+    <curvelet no="7">
+      <rate>USD 2Y</rate>
+      <instrument>USD IRS</instrument>
+    </curvelet>
+    <curvelet no="8">
+      <rate>USD 3Y</rate>
+      <instrument>USD IRS</instrument>
+    </curvelet>
+
+  </curve>
+
+ <curve name="USDKRW FX" type="DualRatesCurve" description="USDKRW FX Curve">
+    <curvelet no="1">
+      <rate>USDKRW ON</rate>
+      <instrument>USDKRW SWAPPOINT</instrument>
+    </curvelet>
+    <curvelet no="2">
+      <rate>USDKRW TN</rate>
+      <instrument>USDKRW SWAPPOINT</instrument>
+    </curvelet>
+    <curvelet no="3">
+      <rate>USDKRW 1W</rate>
+      <instrument>USDKRW SWAPPOINT</instrument>
+    </curvelet>
+    <curvelet no="4">
+      <rate>USDKRW 1M</rate>
+      <instrument>USDKRW SWAPPOINT</instrument>
+    </curvelet>
+    <curvelet no="5">
+      <rate>USDKRW 2M</rate>
+      <instrument>USDKRW SWAPPOINT</instrument>
+    </curvelet>
+    <curvelet no="6">
+      <rate>USDKRW 3M</rate>
+      <instrument>USDKRW SWAPPOINT</instrument>
+    </curvelet>
+    <curvelet no="7">
+      <rate>USDKRW 6M</rate>
+      <instrument>USDKRW SWAPPOINT</instrument>
+    </curvelet>
+    <curvelet no="8">
+      <rate>USDKRW 12M</rate>
+      <instrument>USDKRW SWAPPOINT</instrument>
+    </curvelet>
+    <curvelet no="9">
+      <rate>USDKRW 2Y</rate>
+      <instrument>USDKRW CCS</instrument>
+    </curvelet>
+    <curvelet no="10">
+      <rate>USDKRW 3Y</rate>
+      <instrument>USDKRW CCS</instrument>
+    </curvelet>
+
+  </curve>
+</curves>
